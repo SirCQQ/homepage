@@ -59,7 +59,9 @@ export const WorkLeft: React.FunctionComponent<{
         transform: `translateY(${translateY}px)`,
       }}
     >
-      <Box className='leading-10'>{children}</Box>
+      <Box className='leading-10' padding={{ base: "0", md: "15" }}>
+        {children}
+      </Box>
     </Flex>
   );
 };

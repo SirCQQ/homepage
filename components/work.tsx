@@ -25,7 +25,6 @@ const Work = forwardRef<BoxProps, "div">(({ children, ...props }, ref) => {
           <WorkBackground />
         </TileBackground>
         <TileContent>
-          {/* test */}
           <Tile
             page={0}
             renderContent={({ progress }) => (
