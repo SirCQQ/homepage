@@ -1,11 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from 'react';
 
 interface ScrollValue {
   scrollY: number;
 }
 
 export const ScrollContext = React.createContext<ScrollValue>({
-  scrollY: 0,
+  scrollY: 0
 });
 
 const ScrollObserver: React.FunctionComponent<{
@@ -17,8 +17,8 @@ const ScrollObserver: React.FunctionComponent<{
   }, []);
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll, { passive: true });
-    return () => document.removeEventListener("scroll", handleScroll);
+    document.addEventListener('scroll', handleScroll, { passive: true });
+    return () => document.removeEventListener('scroll', handleScroll);
   }, [handleScroll]);
 
   return (

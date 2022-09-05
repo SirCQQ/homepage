@@ -1,12 +1,12 @@
-import { Box, BoxProps, forwardRef, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import React from "react";
+import { Box, BoxProps, forwardRef, Text } from '@chakra-ui/react';
+import Image from 'next/image';
+import React from 'react';
 import {
   TileWrapper,
   TileBackground,
   TileContent,
-  Tile,
-} from "components/tiles";
+  Tile
+} from 'components/tiles';
 import {
   WorkBackground,
   WorkContainer,
@@ -14,10 +14,10 @@ import {
   WorkLeft,
   WorkLink,
   WorkRight,
-  WorkTitle,
-} from "components/work-panel";
+  WorkTitle
+} from 'components/work-panel';
 
-const Work = forwardRef<BoxProps, "div">(({ children, ...props }, ref) => {
+const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
   return (
     <Box {...props} ref={ref}>
       <TileWrapper numOfPages={3}>
@@ -30,16 +30,16 @@ const Work = forwardRef<BoxProps, "div">(({ children, ...props }, ref) => {
             renderContent={({ progress }) => (
               <WorkContainer>
                 <WorkLeft progress={progress}>
-                  <Text color='white'>I&apos;ve build</Text>
+                  <Text color="white">I&apos;ve build</Text>
                   <WorkTitle>
-                    <WorkLink href='https://catenaelectric.ro/'>
+                    <WorkLink href="https://catenaelectric.ro/">
                       Catena&apos;s
-                    </WorkLink>{" "}
+                    </WorkLink>{' '}
                     Contracts app
                   </WorkTitle>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <WorkImage alt='catena-logo' src='/images/catena.jpg' />
+                  <WorkImage alt="catena-logo" src="/images/catena.jpg" />
                 </WorkRight>
               </WorkContainer>
             )}
@@ -49,16 +49,16 @@ const Work = forwardRef<BoxProps, "div">(({ children, ...props }, ref) => {
             renderContent={({ progress }) => (
               <WorkContainer>
                 <WorkLeft progress={progress}>
-                  <Text color='white'>I&apos;ve worked on</Text>
+                  <Text color="white">I&apos;ve worked on</Text>
                   <WorkTitle>
-                    <WorkLink href='http://seed2shelf.us/'>
+                    <WorkLink href="http://seed2shelf.us/">
                       Seed2Shelf&apos;s
-                    </WorkLink>{" "}
+                    </WorkLink>{' '}
                     application
                   </WorkTitle>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <WorkImage alt='s2s-logo' src='/images/s2s.png' />
+                  <WorkImage alt="s2s-logo" src="/images/s2s.png" />
                 </WorkRight>
               </WorkContainer>
             )}
@@ -68,16 +68,16 @@ const Work = forwardRef<BoxProps, "div">(({ children, ...props }, ref) => {
             renderContent={({ progress }) => (
               <WorkContainer>
                 <WorkLeft progress={progress}>
-                  <Text color='white'>I&apos;ve helped</Text>
+                  <Text color="white">I&apos;ve helped</Text>
                   <WorkTitle>
-                    <WorkLink href='https://powercode.com'>
+                    <WorkLink href="https://powercode.com">
                       Powercode&apos;s
-                    </WorkLink>{" "}
+                    </WorkLink>{' '}
                     platform
                   </WorkTitle>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <WorkImage alt='powercode-logo' src='/images/powercode.png' />
+                  <WorkImage alt="powercode-logo" src="/images/powercode.png" />
                 </WorkRight>
               </WorkContainer>
             )}

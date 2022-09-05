@@ -1,9 +1,9 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Layout from "components/layouts/main";
-import { AnimatePresence } from "framer-motion";
-import ScrollObserver from "components/scroll-observer";
-import Chakra from "components/chakra";
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import Layout from 'components/layouts/main';
+import { AnimatePresence } from 'framer-motion';
+import ScrollObserver from 'components/scroll-observer';
+import Chakra from 'components/chakra';
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <Chakra cookies={pageProps.cookies}>

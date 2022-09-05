@@ -1,6 +1,6 @@
-import { Box, Button, Container, Flex, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import Page from "components/page";
+import { Box, Button, Container, Flex, Text } from '@chakra-ui/react';
+import Link from 'next/link';
+import Page from 'components/page';
 
 const Page404 = () => {
   return (
@@ -11,9 +11,9 @@ const Page404 = () => {
             Opss... Couldn&apos;t find the page that your are looking for.
           </Text>
         </Container>
-        <Flex justifyContent='center' p='2.5'>
+        <Flex justifyContent="center" p="2.5">
           <Button>
-            <Link href='/'>Home page</Link>
+            <Link href="/">Home page</Link>
           </Button>
         </Flex>
       </Box>

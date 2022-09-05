@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { Flex, Text, useColorModeValue } from "@chakra-ui/react";
-import styled from "@emotion/styled";
+import Link from 'next/link';
+import { Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -24,27 +24,27 @@ const Logo = () => {
   // const logoImg = `/images/logo${useColorModeValue('', '-dark')}.png`
 
   return (
-    <Link href='/' scroll={false}>
+    <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Flex
             borderRadius={9999}
-            border={useColorModeValue("3px solid black", " 3px solid white")}
-            borderWidth='3px'
-            padding='1'
-            h='10'
-            w='10'
-            alignItems={"center"}
-            justifyContent='center'
+            border={useColorModeValue('3px solid black', ' 3px solid white')}
+            borderWidth="3px"
+            padding="1"
+            h="10"
+            w="10"
+            alignItems={'center'}
+            justifyContent="center"
           >
             <Text
-              fontSize={"1rem"}
-              h='fit-content'
-              w='full'
-              textAlign={"center"}
-              lineHeight='inherit'
+              fontSize={'1rem'}
+              h="fit-content"
+              w="full"
+              textAlign={'center'}
+              lineHeight="inherit"
               _hover={{
-                transform: "rotate(-20deg)",
+                transform: 'rotate(-20deg)'
               }}
             >
               SQ
@@ -52,9 +52,9 @@ const Logo = () => {
           </Flex>
           {/* <Image src={logoImg} width={20} height={20} alt="logo" /> */}
           <Text
-            color={useColorModeValue("gray.900", "whiteAlpha.900")}
-            fontFamily='monospace, sans-serif'
-            fontWeight='bold'
+            color={useColorModeValue('gray.900', 'whiteAlpha.900')}
+            fontFamily="monospace, sans-serif"
+            fontWeight="bold"
             ml={3}
           >
             Gatu Cristian
