@@ -2,8 +2,11 @@ import {
   extendTheme,
   useColorModeValue,
   ThemeExtension,
-  ThemeOverride
+  ThemeOverride,
+  ComponentStyleConfig,
+  theme as baseTheme
 } from '@chakra-ui/react';
+import { StyleFunctionProps } from '@chakra-ui/styled-system';
 import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
@@ -14,7 +17,7 @@ const styles = {
   })
 };
 
-const components = {
+const components: Record<string, ComponentStyleConfig> = {
   Heading: {
     variants: {
       'section-title': {
@@ -35,8 +38,25 @@ const components = {
     })
   },
   Input: {
-    variant: {
-      flushed: props => ({
+    defaultProps: (props: StyleFunctionProps) => ({
+      mx: 'auto',
+      my: '5',
+      w: '500px',
+      color: props.colorMode === 'dark' ? 'whiteAlpha.900' : 'blackAlpha.900',
+      focusBorderColor: props.colorMode === 'dark' ? 'red.500' : 'red.200',
+      _placeholder: { color: 'inherit' }
+    }),
+    baseStyle: (props: StyleFunctionProps) => ({
+      mx: 'auto',
+      my: '5',
+      w: '500px',
+      color: props.colorMode === 'dark' ? 'whiteAlpha.900' : 'blackAlpha.900',
+      focusBorderColor: props.colorMode === 'dark' ? 'red.500' : 'red.200',
+      _placeholder: { color: 'inherit' }
+    }),
+
+    variants: {
+      flushed: (props: StyleFunctionProps) => ({
         mx: 'auto',
         my: '5',
         w: '500px',
@@ -61,5 +81,52 @@ const config = {
   useSystemColorMode: true
 };
 
-const theme = extendTheme({ config, styles, components, fonts, colors });
+const theme = extendTheme(
+  {
+    config,
+    styles,
+    components: {
+      Heading: {
+        variants: {
+          'section-title': {
+            textDecoration: 'underline',
+            fontSize: { base: 20, md: '2.5rem' },
+            textUnderlineOffset: 6,
+            textDecorationColor: '#525252',
+            textDecorationThickness: 4,
+            marginTop: 3,
+            marginBottom: 4
+          }
+        }
+      },
+      Link: {
+        baseStyle: props => ({
+          color: mode('black', 'white')(props),
+          textUnderlineOffset: 3
+        })
+      },
+      Input: {
+        baseStyle: {
+          w: '500px'
+        },
+
+        variants: {
+          flushed: props => ({
+            mx: 'auto',
+            my: '5',
+            w: '500px',
+            color:
+              props.colorMode === 'dark' ? 'whiteAlpha.900' : 'blackAlpha.900',
+            focusBorderColor:
+              props.colorMode === 'dark' ? 'red.500' : 'red.200',
+            _placeholder: { color: 'inherit' }
+          })
+        }
+      }
+    },
+    fonts,
+    colors
+  },
+  baseTheme
+);
 export default theme;

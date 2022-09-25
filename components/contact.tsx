@@ -26,27 +26,27 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
           <Input
             name="email"
             type="email"
-            variant={'flushed'}
             placeholder="Email"
+            maxLength={256}
+            variant={'flushed'}
             mx="auto"
             my="5"
             w="500px"
-            maxLength={256}
-            color={'whiteAlpha.900'}
+            color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
           />
           <Input
+            placeholder="Name"
             name="name"
-            mx="auto"
+            maxLength={124}
             variant={'flushed'}
+            mx="auto"
             my="5"
             w="500px"
-            placeholder="Name"
-            color={'whiteAlpha.900'}
+            color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
-            maxLength={124}
           />
           <Textarea
             name="message"
@@ -55,7 +55,7 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             mx="auto"
             my="5"
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
-            color={'whiteAlpha.900'}
+            color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             w="500px"
             placeholder="Your message"

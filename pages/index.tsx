@@ -13,8 +13,8 @@ const index: NextPage = () => {
       <Home id="home" />
       <About id="about" />
       <Work id="work" />
-      {/* <Skills id='skills' /> */}
-      {/* <Posts id='skills' /> */}
+      <Skills id="skills" />
+      <Posts id="posts" />
       <Contact id="contact" />
     </div>
   );
