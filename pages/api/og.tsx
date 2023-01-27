@@ -7,7 +7,7 @@ export const config = {
 export default function handler(req: NextApiRequest) {
   const { searchParams } = new URL(req.url);
   console.log(searchParams);
-  return new ImageResponse(<div>{searchParams}</div>, {
+  return new ImageResponse(<div>Image Response Test</div>, {
     width: 1200,
     height: 630
   });
