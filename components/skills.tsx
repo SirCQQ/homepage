@@ -1,6 +1,6 @@
 import React from 'react';
 import Page from 'components/page';
-import Section from './section';
+import Section from './core/section';
 import { Box, Grid, Heading, Text } from '@chakra-ui/react';
 import Skill from './skill';
 
@@ -14,6 +14,7 @@ const Skills: React.FunctionComponent<any> = ({ children, ...props }) => {
       h="fit-content"
       minH="100vh"
       paddingY="15"
+      backgroundColor={'black'}
     >
       <Box
         w="container.xl"

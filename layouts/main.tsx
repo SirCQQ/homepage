@@ -17,11 +17,11 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@SirCQQ" />
         <meta name="twitter:creator" content="@SirCQQ" />
-        <meta name="twitter:image" content="" />
+        {/* <meta name="twitter:image" content="" /> */}
         <meta property="og:site_name" content="Cristian Gatu" />
         <meta name="og:title" content="Cristian Gatu" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/api/og/homepage" />
         <title>Gatu Cristian - Homepage</title>
       </Head>
 

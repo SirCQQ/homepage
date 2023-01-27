@@ -3,7 +3,7 @@ import { Flex, useColorModeValue, Heading, Box, Text } from '@chakra-ui/react';
 import { BioSection, BioYear } from './bio';
 import Page from './page';
 import ProfileImage from './profile-image';
-import Section from './section';
+import Section from './core/section';
 
 const About: React.FunctionComponent<any> = ({ children, ...props }) => {
   return (
@@ -49,8 +49,8 @@ const About: React.FunctionComponent<any> = ({ children, ...props }) => {
               alt="Profile image"
               borderRadius="full"
               layout="fill"
-              width="200%"
-              height="200%"
+              width="200"
+              height="200"
             />
           </Box>
         </Box>

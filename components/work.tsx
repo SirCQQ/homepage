@@ -6,7 +6,7 @@ import {
   TileBackground,
   TileContent,
   Tile
-} from 'components/tiles';
+} from 'components/core/tiles';
 import {
   WorkBackground,
   WorkContainer,
@@ -15,7 +15,7 @@ import {
   WorkLink,
   WorkRight,
   WorkTitle
-} from 'components/work-panel';
+} from 'components/core/work-panel';
 
 const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
   return (
@@ -58,7 +58,7 @@ const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
                   </WorkTitle>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <WorkImage alt="s2s-logo" src="/images/s2s.png" />
+                  <WorkImage alt="s2s-logo" src="/images/s2s-logo.png" />
                 </WorkRight>
               </WorkContainer>
             )}
@@ -77,7 +77,10 @@ const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
                   </WorkTitle>
                 </WorkLeft>
                 <WorkRight progress={progress}>
-                  <WorkImage alt="powercode-logo" src="/images/powercode.png" />
+                  <WorkImage
+                    alt="powercode-logo"
+                    src="/images/Powercode_Logo2.png"
+                  />
                 </WorkRight>
               </WorkContainer>
             )}

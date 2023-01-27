@@ -4,6 +4,7 @@ import { ScrollContext } from './scroll-observer';
 interface WrapperProps {
   numOfPages: number;
   children?: React.ReactNode | React.ReactNode[];
+  id?: string;
 }
 
 interface TileContextValue {
@@ -17,7 +18,8 @@ export const TileContext = React.createContext<TileContextValue>({
 
 export const TileWrapper: React.FC<WrapperProps> = ({
   children,
-  numOfPages
+  numOfPages,
+  id
 }) => {
   const { scrollY } = useContext(ScrollContext);
 
@@ -39,6 +41,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
   return (
     <TileContext.Provider value={{ numOfPages, currentPage }}>
       <Box
+        id={id}
         className="tile-wrapper"
         ref={refContainer}
         position="relative"
@@ -55,7 +58,7 @@ export const TileWrapper: React.FC<WrapperProps> = ({
 export const TileBackground: FunctionComponent<{
   children?: React.ReactNode | React.ReactNode[];
 }> = ({ children }) => (
-  <Box position="absolute" h="full" w="full" className="absolute h-full w-full">
+  <Box position="absolute" h="100%" w="100%" className="tile-background">
     {children}
   </Box>
 );
@@ -65,7 +68,7 @@ export const TileContent: FunctionComponent<{
 }> = ({ children }) => (
   <Box
     position="sticky"
-    top="0"
+    top="0px"
     h="100vh"
     overflow={'hidden'}
     className="sticky top-0 h-screen overflow-hidden"
@@ -93,7 +96,6 @@ export const Tile: FunctionComponent<Props> = ({ page, renderContent }) => {
       position="absolute"
       top="0px"
       w="full"
-      className="absolute top-0 w-full"
       style={{
         pointerEvents: progress <= 0 || progress >= 1 ? 'none' : undefined,
         opacity

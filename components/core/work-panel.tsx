@@ -34,7 +34,11 @@ export const WorkBackground: React.FunctionComponent<{
       minH="100vh"
     >
       <Box bg="black" h={{ base: '40vh', md: 'auto' }} />
-      <Box bg="white" h={{ base: '60vh' }} minH={{ md: '100vh' }} />
+      <Box
+        bg="white"
+        h={{ base: '60vh', md: '100vh' }}
+        minH={{ md: '100vh' }}
+      />
     </Grid>
   );
 };
@@ -50,7 +54,6 @@ export const WorkLeft: React.FunctionComponent<{
   return (
     <Flex
       direction="column"
-      // flexDirection={}
       alignItems="center"
       justifyContent={'center'}
       h={{ base: '40vh', md: 'auto' }}
@@ -77,7 +80,8 @@ export const WorkRight: React.FunctionComponent<{
       flex="1"
       alignItems={{ md: 'center' }}
       justifyContent="center"
-      h="100vh"
+      h={{ base: '40vh', md: 'auto' }}
+      align={{ xl: 'center' }}
       // className='flex flex-1 lg:items-center justify-center h-screen'
       style={{
         transform: `translateY(${translateY}px)`
@@ -99,13 +103,16 @@ export const WorkRight: React.FunctionComponent<{
 
 export const WorkLink = ({ href, children }) => {
   return (
-    <Link href={href}>
-      <a
+    <Link
+      href={href}
+      target="_blank"
+      style={{ textDecoration: 'underline', textUnderlineOffset: '10px' }}
+    >
+      {/* <a
         target="_blank"
-        style={{ textDecoration: 'underline', textUnderlineOffset: '10px' }}
-      >
-        {children}
-      </a>
+      > */}
+      {children}
+      {/* </a> */}
     </Link>
   );
 };
@@ -127,7 +134,7 @@ export const WorkImage = ({ src, alt }) => {
   return (
     <Box w="full" p="10">
       <Image
-        layout="responsive"
+        // layout="responsive"
         alt={alt}
         src={src}
         width={1080}

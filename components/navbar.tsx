@@ -14,7 +14,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import ThemeToggleButton from 'components/theme-toggle-button';
+import ThemeToggleButton from 'components/core/theme-toggle-button';
 import { IoLogoGithub } from 'react-icons/io5';
 import Logo from './logo';
 
@@ -22,7 +22,7 @@ const LinkItem = ({ href, path, target = '_self', children, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
   return (
-    <NextLink href={href} passHref scroll={false}>
+    <NextLink href={href} passHref scroll={false} legacyBehavior>
       <Link
         p={2}
         bg={active ? 'red.500' : undefined}

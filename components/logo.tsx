@@ -25,42 +25,40 @@ const Logo = () => {
 
   return (
     <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Flex
-            borderRadius={9999}
-            border={useColorModeValue('3px solid black', ' 3px solid white')}
-            borderWidth="3px"
-            padding="1"
-            h="10"
-            w="10"
-            alignItems={'center'}
-            justifyContent="center"
-          >
-            <Text
-              fontSize={'1rem'}
-              h="fit-content"
-              w="full"
-              textAlign={'center'}
-              lineHeight="inherit"
-              _hover={{
-                transform: 'rotate(-20deg)'
-              }}
-            >
-              SQ
-            </Text>
-          </Flex>
-          {/* <Image src={logoImg} width={20} height={20} alt="logo" /> */}
+      <LogoBox>
+        <Flex
+          borderRadius={9999}
+          border={useColorModeValue('3px solid black', ' 3px solid white')}
+          borderWidth="3px"
+          padding="1"
+          h="10"
+          w="10"
+          alignItems={'center'}
+          justifyContent="center"
+        >
           <Text
-            color={useColorModeValue('gray.900', 'whiteAlpha.900')}
-            fontFamily="monospace, sans-serif"
-            fontWeight="bold"
-            ml={3}
+            fontSize={'1rem'}
+            h="fit-content"
+            w="full"
+            textAlign={'center'}
+            lineHeight="inherit"
+            _hover={{
+              transform: 'rotate(-20deg)'
+            }}
           >
-            Gatu Cristian
+            SQ
           </Text>
-        </LogoBox>
-      </a>
+        </Flex>
+        {/* <Image src={logoImg} width={20} height={20} alt="logo" /> */}
+        <Text
+          color={useColorModeValue('gray.900', 'whiteAlpha.900')}
+          fontFamily="monospace, sans-serif"
+          fontWeight="bold"
+          ml={3}
+        >
+          Gatu Cristian
+        </Text>
+      </LogoBox>
     </Link>
   );
 };
