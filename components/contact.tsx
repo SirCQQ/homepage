@@ -31,7 +31,7 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             variant={'flushed'}
             mx="auto"
             my="5"
-            w="500px"
+            w={{ md: '500px', xs: '80%' }}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
@@ -43,7 +43,7 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             variant={'flushed'}
             mx="auto"
             my="5"
-            w="500px"
+            w={{ md: '500px', xs: '80%' }}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
@@ -57,7 +57,7 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
-            w="500px"
+            w={{ md: '500px', xs: '80%' }}
             placeholder="Your message"
           />
           <Button
@@ -65,11 +65,10 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             // variant={'outline'}
             mx="auto"
             my="5"
-            w="500px"
+            w={{ md: '500px', xs: '80%' }}
             colorScheme={'red'}
           >
-            {' '}
-            Send{' '}
+            Send
           </Button>
         </FormControl>
       </Box>

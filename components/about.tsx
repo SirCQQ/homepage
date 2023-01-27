@@ -59,7 +59,7 @@ const About: React.FunctionComponent<any> = ({ children, ...props }) => {
             <Heading variant="section-title">About</Heading>
             <Text>
               I am a fullstack developer based in Europe with a big passion for
-              building new things that would have a big impact and coffee ☕.
+              building applications that would have a big impact and coffee ☕.
               Excited to take part in the process from the planing till the
               finish product. If I am not at the laptop usualy I am out with my
               fiance having a great time and occasionally taking photos or
