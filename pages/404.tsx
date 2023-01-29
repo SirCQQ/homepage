@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
-import Page from 'components/page';
+import Page from 'components/core/page';
 
 const Page404 = () => {
   return (

@@ -1,24 +1,24 @@
 import React from 'react';
-import Page from 'components/page';
-import Section from './core/section';
+import Page from 'components/core/page';
+import Section from '../core/section';
 import { Box, Grid, Heading, Text } from '@chakra-ui/react';
-import Skill from './skill';
+import Skill from '../core/skill';
 
 const Skills: React.FunctionComponent<any> = ({ children, ...props }) => {
   return (
     <Page
       {...props}
       w="100vw"
-      maxWidth={'100%'}
-      minW={'100%'}
+      maxWidth="100%"
+      minW="100%"
       h="fit-content"
       minH="100vh"
       paddingY="15"
-      backgroundColor={'black'}
+      backgroundColor="black"
     >
       <Box
         w="container.xl"
-        maxWidth={'100%'}
+        maxWidth="100%"
         h="full"
         minH="100vh"
         flexDir="column"

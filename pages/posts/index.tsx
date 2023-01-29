@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
 import React from 'react';
-import Page from 'components/page';
+import Page from 'components/core/page';
 
 export default function index() {
   return (

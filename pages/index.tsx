@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
-import About from 'components/about';
-import Contact from 'components/contact';
-import Home from 'components/home';
-import Skills from 'components/skills';
-import Work from 'components/work';
+import About from 'components/sectios/about';
+import Contact from 'components/sectios/contact';
+import Home from 'components/sectios/home';
+import Skills from 'components/sectios/skills';
+import Work from 'components/sectios/work';
 import Posts from 'components/posts';
 import Head from 'next/head';
 

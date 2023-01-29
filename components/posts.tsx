@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from './page';
+import Page from './core/page';
 
 const Posts: React.FunctionComponent<React.PropsWithChildren<any>> = ({
   children,

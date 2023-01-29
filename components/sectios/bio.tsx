@@ -2,9 +2,9 @@ import { Box } from '@chakra-ui/react';
 
 export const BioSection = ({ children }) => (
   <Box
-    display={'flex'}
+    display="flex"
     w="100vw"
-    maxW={'100%'}
+    maxW="100%"
     marginBottom={{ base: 10, md: '5' }}
     flexDirection={{ base: 'column', sm: 'row' }}
     wordBreak="keep-all"
@@ -14,7 +14,7 @@ export const BioSection = ({ children }) => (
 );
 
 export const BioYear = ({ children }) => (
-  <Box as="span" fontWeight={'bold'} marginRight="5">
+  <Box as="span" fontWeight="bold" marginRight="5">
     {children}
   </Box>
 );

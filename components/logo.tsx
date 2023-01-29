@@ -1,13 +1,14 @@
 import Link from 'next/link';
-import { Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import Image from 'next/image';
 
 const LogoBox = styled.span`
   font-weight: bold;
   font-size: 18px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  height: 30px;
+  height: 60px;
   line-height: 20px;
   padding: 10px;
 
@@ -15,8 +16,8 @@ const LogoBox = styled.span`
     transition: 200ms ease;
   }
 
-  &:hover img {
-    transform: rotate(20deg);
+  img {
+    transform: rotate(-20deg);
   }
 `;
 
@@ -33,23 +34,17 @@ const Logo = () => {
           padding="1"
           h="10"
           w="10"
-          alignItems={'center'}
+          alignItems="center"
           justifyContent="center"
+          position="relative"
+          overflow="hidden"
+          transition="0.1s ease-in"
+          _hover={{
+            transform: 'rotate(20deg)'
+          }}
         >
-          <Text
-            fontSize={'1rem'}
-            h="fit-content"
-            w="full"
-            textAlign={'center'}
-            lineHeight="inherit"
-            _hover={{
-              transform: 'rotate(-20deg)'
-            }}
-          >
-            SQ
-          </Text>
+          <Image alt="avatar" src="/images/avatar2.png" fill />
         </Flex>
-        {/* <Image src={logoImg} width={20} height={20} alt="logo" /> */}
         <Text
           color={useColorModeValue('gray.900', 'whiteAlpha.900')}
           fontFamily="monospace, sans-serif"

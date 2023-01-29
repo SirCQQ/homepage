@@ -70,7 +70,7 @@ export const TileContent: FunctionComponent<{
     position="sticky"
     top="0px"
     h="100vh"
-    overflow={'hidden'}
+    overflow="hidden"
     className="sticky top-0 h-screen overflow-hidden"
   >
     {children}

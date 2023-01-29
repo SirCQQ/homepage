@@ -16,7 +16,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from 'components/core/theme-toggle-button';
 import { IoLogoGithub } from 'react-icons/io5';
-import Logo from './logo';
+import Logo from '../logo';
 
 const LinkItem = ({ href, path, target = '_self', children, ...props }) => {
   const active = path === href;
@@ -48,20 +48,21 @@ const Navbar = props => {
       className="nav"
       h="fit-content"
       bg={useColorModeValue('#ffffff80', '#20202390')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      css={{ backdropFilter: useColorModeValue('', 'blur(10px)') }}
+      boxShadow={useColorModeValue('0px 0px 1px rgba(0,0,0,0.3) inset', '')}
       zIndex={2}
       {...props}
     >
       <Container
         display="flex"
         p={2}
-        maxWidth={'100%'}
+        maxWidth="100%"
         flexWrap="wrap"
         alignItems="center"
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="lg" letterSpacing="tighter">
             <Logo />
           </Heading>
         </Flex>
@@ -74,15 +75,15 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/work" path={path}>
+            Work
           </LinkItem>
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/SirCQQ/sircqq-homepage"
+            href="https://github.com/SirCQQ/homepage"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -109,16 +110,13 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/work" passHref>
+                  <MenuItem as={Link}>Work</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/SirCQQ/sircqq-homepage"
-                >
+                <MenuItem as={Link} href="https://github.com/SirCQQ/homepage">
                   View Source
                 </MenuItem>
               </MenuList>

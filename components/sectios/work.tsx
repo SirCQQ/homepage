@@ -34,7 +34,7 @@ const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
                   <WorkTitle>
                     <WorkLink href="https://catenaelectric.ro/">
                       Catena&apos;s
-                    </WorkLink>{' '}
+                    </WorkLink>
                     Contracts app
                   </WorkTitle>
                 </WorkLeft>
@@ -53,7 +53,7 @@ const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
                   <WorkTitle>
                     <WorkLink href="http://seed2shelf.us/">
                       Seed2Shelf&apos;s
-                    </WorkLink>{' '}
+                    </WorkLink>
                     application
                   </WorkTitle>
                 </WorkLeft>
@@ -72,7 +72,7 @@ const Work = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {
                   <WorkTitle>
                     <WorkLink href="https://powercode.com">
                       Powercode&apos;s
-                    </WorkLink>{' '}
+                    </WorkLink>
                     platform
                   </WorkTitle>
                 </WorkLeft>

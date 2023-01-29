@@ -55,7 +55,7 @@ export const WorkLeft: React.FunctionComponent<{
     <Flex
       direction="column"
       alignItems="center"
-      justifyContent={'center'}
+      justifyContent="center"
       h={{ base: '40vh', md: 'auto' }}
       fontSize={{ base: '3xl', md: '3xl' }}
       style={{
@@ -123,7 +123,7 @@ export const WorkTitle = ({ children }) => {
       color="white"
       fontSize={{ base: '4xl', md: '5xl' }}
       fontWeight="semibold"
-      letterSpacing={'tight'}
+      letterSpacing="tight"
     >
       {children}
     </Text>

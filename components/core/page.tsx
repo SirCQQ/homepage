@@ -13,9 +13,9 @@ const Page = forwardRef<FlexProps, 'div'>(({ children, ...props }, ref) => {
       bg={useColorModeValue('white', 'black')}
       color={useColorModeValue('black', 'white')}
       fontSize="3xl"
-      justifyContent={'center'}
+      justifyContent="center"
       alignItems="center"
-      minH={'100vh'}
+      minH="100vh"
       minW="100%"
       h="full"
       w="full"

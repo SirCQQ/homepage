@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from 'components/page';
+import Page from 'components/core/page';
 import Typed from 'react-typed';
 import { Flex, Text, useColorModeValue } from '@chakra-ui/react';
 
@@ -13,7 +13,6 @@ const Home: React.FunctionComponent<any> = ({ children, ...props }) => {
         w="full"
         m="0"
         minH="100vh"
-        className="flex justify-around items-center h-full w-full m-0 min-h-[100vh]"
         flexDir={{ base: 'column', md: 'row' }}
       >
         <Flex
@@ -23,11 +22,10 @@ const Home: React.FunctionComponent<any> = ({ children, ...props }) => {
           flex="1"
           color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
           minH={{ base: '50%', md: '100vh' }}
-          justifyContent={'center'}
+          justifyContent="center"
           alignItems="center"
-          flexDir={'column'}
+          flexDir="column"
           textAlign="center"
-          // className='bg-white text-black h-full w-full flex-1 flex items-center justify-center flex-col'
         >
           <Text>Hello there.</Text>
           <Text>I&apos;m Gatu Cristian.</Text>
@@ -38,12 +36,11 @@ const Home: React.FunctionComponent<any> = ({ children, ...props }) => {
           w={{ base: 'full', md: 'full' }}
           minH={{ base: '50%', md: '100vh' }}
           flex="1"
-          justifyContent={'center'}
+          justifyContent="center"
           alignItems="center"
-          flexDir={'column'}
+          flexDir="column"
           bg={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
           color={useColorModeValue('whiteAlpha.900', 'blackAlpha.900')}
-          className="bg-black text-white min-h-[100vh] w-full flex-1 flex items-center justify-center flex-col text-right"
         >
           <Text>I am a</Text>
           <Text>

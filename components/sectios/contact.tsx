@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from 'components/page';
+import Page from 'components/core/page';
 import {
   Box,
   Button,
@@ -11,14 +11,14 @@ import {
 
 const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
   return (
-    <Page {...props} display="flex" flexDirection={'column'} minH="100vh">
+    <Page {...props} display="flex" flexDirection="column" minH="100vh">
       Contact
       <Box w="full" p="10">
         <FormControl
           w="full"
           method="POST"
           display="flex"
-          flexDirection={'column'}
+          flexDirection="column"
           target="_blank"
           as="form"
           action="https://formsubmit.co/d92d4dbfc977668e8bf56d6b6cb37e10"
@@ -28,10 +28,10 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             type="email"
             placeholder="Email"
             maxLength={256}
-            variant={'flushed'}
+            variant="flushed"
             mx="auto"
             my="5"
-            w={{ md: '500px', xs: '80%' }}
+            w={{ base: '80%', md: '500px' }}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
@@ -40,33 +40,33 @@ const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
             placeholder="Name"
             name="name"
             maxLength={124}
-            variant={'flushed'}
+            variant="flushed"
             mx="auto"
             my="5"
-            w={{ md: '500px', xs: '80%' }}
+            w={{ base: '80%', md: '500px' }}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
           />
           <Textarea
             name="message"
-            variant={'flushed'}
+            variant="flushed"
             maxLength={1024}
             mx="auto"
             my="5"
             focusBorderColor={useColorModeValue('red.500', 'red.200')}
             color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
             _placeholder={{ color: 'inherit' }}
-            w={{ md: '500px', xs: '80%' }}
+            w={{ base: '80%', md: '500px' }}
             placeholder="Your message"
           />
           <Button
             type="submit"
-            // variant={'outline'}
+            // variant='outline'
             mx="auto"
             my="5"
-            w={{ md: '500px', xs: '80%' }}
-            colorScheme={'red'}
+            w={{ base: '80%', md: '500px' }}
+            colorScheme="red"
           >
             Send
           </Button>
