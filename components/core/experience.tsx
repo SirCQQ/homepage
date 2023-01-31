@@ -1,17 +1,11 @@
-import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import React, { useId } from 'react';
+import { Box, Flex, Grid, Text, useColorModeValue } from '@chakra-ui/react';
 import { months } from 'common';
+import { Spacer as Br } from '@chakra-ui/react';
 
-export const ProjectExperience = ({ children }) => {
+export const CompanyExperience = ({ children }) => {
   return (
-    <Box
-      minH="calc( 100vh - 76px -60px )"
-      h="full"
-      minHeight="80vh"
-      padding="0px 20px"
-      //   bgColor='white'
-      width="full"
-    >
+    <Box h="full" padding={{ base: '20px 10px', md: '20px 20px' }} width="full">
       {children}
     </Box>
   );
@@ -23,7 +17,62 @@ export const ExperienceHeader = ({ children }) => {
 
 export const ExperienceCompanyName = ({ children }) => {
   return (
-    <Text fontSize="2xl" fontWeight="semibold">
+    <Text fontSize={{ base: '2xl', md: '3xl' }} fontWeight="semibold">
+      {children}
+    </Text>
+  );
+};
+export const ExperienceBody = ({ children }) => {
+  return <Box>{children}</Box>;
+};
+
+const ExperienceProject = ({ children }) => {
+  return <Box m="10px 0px ">{children}</Box>;
+};
+
+const ProjectName = ({ children }) => {
+  return (
+    <Text fontSize={{ base: 'larger', md: 'larger' }} fontWeight={'bold'}>
+      {children}
+    </Text>
+  );
+};
+
+const ProjectDescription = ({ children }) => {
+  return <Box fontSize={{ base: 'medium', md: 'lg' }}>{children}</Box>;
+};
+
+type ProjectStackProps = {
+  technologies: string[];
+};
+const ProjectStack: React.FunctionComponent<ProjectStackProps> = ({
+  technologies
+}) => {
+  return (
+    <Box>
+      <Text fontSize={'large'} fontWeight="bold">
+        Technologies
+      </Text>
+      <Flex wrap={'wrap'}>
+        {technologies.map((t, i) => (
+          <Technologi key={`${t}-i`}>{t}</Technologi>
+        ))}
+      </Flex>
+    </Box>
+  );
+};
+
+const Technologi = ({ children }) => {
+  return (
+    <Text
+      border="2px solid"
+      height={'fit-content'}
+      padding="2px 10px"
+      borderColor={useColorModeValue('red.500', 'red.900')}
+      borderRadius="20px"
+      margin="5px 5px 5px 0px "
+      w="fit-content"
+    >
       {children}
     </Text>
   );
@@ -31,19 +80,18 @@ export const ExperienceCompanyName = ({ children }) => {
 
 type ExperienceCompanyStayProps = {
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
+  current?: boolean;
 };
 
 export const ExperienceCompanyStay: React.FunctionComponent<
   ExperienceCompanyStayProps
-> = ({ startDate, endDate }) => {
+> = ({ startDate, endDate, current }) => {
   return (
     <Box display="flex">
       <Text fontSize="md" fontWeight="normal">
-        {dateToString(startDate)}-{dateToString(endDate)}
+        {dateToString(startDate)}-{!current ? dateToString(endDate) : 'Present'}
       </Text>
-      &nbsp;
-      {/* <Text fontSize='md'>({calculateStay(startDate, endDate)})</Text> */}
     </Box>
   );
 };
@@ -54,24 +102,27 @@ const dateToString = date => {
   return [months[month], year].join('/');
 };
 
-const calculateStay = (startDate: Date, endDate: Date) => {
-  const yearsStayed = endDate.getFullYear() - startDate.getFullYear();
-  const monthsStayed = endDate.getMonth() - startDate.getMonth();
-  let years = '';
-  let months = '';
-  if (yearsStayed > 0) {
-    if (yearsStayed === 1) {
-      years = `${yearsStayed} year`;
-    } else {
-      years = `${yearsStayed} years`;
-    }
-  }
-  if (monthsStayed > 0) {
-    if (monthsStayed === 1) {
-      months = `${monthsStayed} month`;
-    } else {
-      months = `${monthsStayed} months`;
-    }
-  }
-  return `${years ?? ''} ${years && months ? 'and' : ''} ${months ?? ''}`;
+export type ProjectProps = {
+  projectName: string;
+  projectDescription: string[];
+  technologies: ProjectStackProps['technologies'];
 };
+export const Project: React.FunctionComponent<ProjectProps> = React.memo(
+  ({ projectDescription, projectName, technologies }) => {
+    return (
+      <ExperienceProject>
+        <ProjectName>{projectName}</ProjectName>
+        <ProjectDescription>
+          {projectDescription.map((d, i) => (
+            <React.Fragment key={`${i}-${d.split(' ')[0]}`}>
+              <Text>{d}</Text>
+              <Br margin={'10px 0px'} />
+            </React.Fragment>
+          ))}
+        </ProjectDescription>
+
+        <ProjectStack technologies={technologies} />
+      </ExperienceProject>
+    );
+  }
+);

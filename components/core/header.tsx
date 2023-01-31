@@ -16,7 +16,7 @@ const Header = forwardRef<FlexProps, 'div'>(({ children, ...props }, ref) => {
       //   justifyContent='center'
       // alignItems="center"
       // width='full'
-      padding="15px"
+      // padding={{ md: '15px', base: '10px' }}
       fontWeight="bold"
       {...props}
     >

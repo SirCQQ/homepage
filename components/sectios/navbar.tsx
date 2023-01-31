@@ -48,7 +48,7 @@ const Navbar = props => {
       className="nav"
       h="fit-content"
       bg={useColorModeValue('#ffffff80', '#20202390')}
-      css={{ backdropFilter: useColorModeValue('', 'blur(10px)') }}
+      css={{ backdropFilter: 'blur(10px)' }}
       boxShadow={useColorModeValue('0px 0px 1px rgba(0,0,0,0.3) inset', '')}
       zIndex={2}
       {...props}

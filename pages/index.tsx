@@ -3,7 +3,7 @@ import About from 'components/sectios/about';
 import Contact from 'components/sectios/contact';
 import Home from 'components/sectios/home';
 import Skills from 'components/sectios/skills';
-import Work from 'components/sectios/work';
+import DisplayWork from 'components/sectios/work';
 import Posts from 'components/posts';
 import Head from 'next/head';
 
@@ -18,7 +18,7 @@ const index: NextPage = () => {
       </Head>
       <Home id="home" />
       <About id="about" />
-      <Work id="work" />
+      <DisplayWork id="work" />
       {/* <Skills id="skills" /> */}
       {/* <Posts id="posts" /> */}
       <Contact id="contact" />
