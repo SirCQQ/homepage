@@ -109,6 +109,28 @@ const projects: Record<string, ProjectProps> = {
       'NestJs',
       'REST API'
     ]
+  },
+  gemini: {
+    projectName: 'Gemini',
+    projectDescription: [
+      'The main technologies are Remix, Typescript, Lambda, Graphql, MySQL, AWS, NextJs and Pulumi.',
+      "      The project is the re-writing of an old application from the company, the application it's like a blog for the HR industry where different people from different companies are posting articles or services that their companies are providing and many other things, the application it's a big hit in Germany, having a 90& margin of the market."
+    ],
+    technologies: [
+      'JavaScript',
+      'CSS',
+      'MySQL',
+      'SQL',
+      'Node.js',
+      'Typescript',
+      'Git',
+      'SASS',
+      'HTML',
+      'Next.js',
+      'React',
+      'Remix',
+      'AWS'
+    ]
   }
 };
 
