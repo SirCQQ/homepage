@@ -139,7 +139,7 @@ export const Experience = () => {
     <Page
       flexDirection="column"
       alignItems="start"
-      padding="0 15px"
+      padding={{ base: '0 15px', md: '0px 15%', lg: '0px 25%' }}
       fontSize={'unset'}
     >
       <Spacer />
