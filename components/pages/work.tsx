@@ -201,6 +201,9 @@ export const Experience = () => {
           <ExperienceCompanyName>Haufe</ExperienceCompanyName>
           <ExperienceCompanyStay startDate={new Date(2022, 10)} current />
         </ExperienceHeader>
+        <ExperienceBody>
+          <Project {...projects['gemini']} />
+        </ExperienceBody>
       </CompanyExperience>
     </Page>
   );
