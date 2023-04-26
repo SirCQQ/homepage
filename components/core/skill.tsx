@@ -1,10 +1,4 @@
-import {
-  Badge,
-  Box,
-  Text,
-  ThemingProps,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Badge, Box, Text, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 
 type VariantType = 'outline' | 'solid' | 'subtle';

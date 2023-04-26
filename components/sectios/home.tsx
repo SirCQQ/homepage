@@ -3,7 +3,7 @@ import Page from 'components/core/page';
 import Typed from 'react-typed';
 import { Flex, Text, useColorModeValue } from '@chakra-ui/react';
 
-const Home: React.FunctionComponent<any> = ({ children, ...props }) => {
+const Home: React.FunctionComponent<any> = ({ ...props }) => {
   return (
     <Page {...props}>
       <Flex

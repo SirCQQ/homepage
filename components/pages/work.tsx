@@ -8,84 +8,12 @@ import {
   ExperienceHeader,
   ExperienceCompanyStay,
   ExperienceBody,
-  ProjectProps,
-  Project,
   ExperienceProject,
   ProjectName,
   ProjectDescription,
   ProjectStack
 } from 'components/core/experience';
 import { Text, Spacer as Br, UnorderedList, ListItem } from '@chakra-ui/react';
-
-const projects: Record<string, ProjectProps> = {
-  bytex: {
-    projectName: 'Powercode',
-    projectDescription: [
-      'The application aims to help ( TV, Internet and Telephone) providers to organise their clients and services better.',
-      `The main features I was working on were: Generating invoices, User Defined Fields, User Notification, User Permissions`
-    ],
-    technologies: [
-      'JavaScript',
-      'CSS',
-      'MySQL',
-      'SQL',
-      'Node.js',
-      'Redux',
-      'Typescript',
-      'GraphQL',
-      'Git',
-      'SASS',
-      'HTML',
-      'Next.js',
-      'React'
-    ]
-  },
-  seed2shelf: {
-    projectName: 'Seed2Shelf Application',
-    projectDescription: [
-      "Seed2Shelf it's a SaaS that aims to help production labs to organise better and to create organised workflows and get better results, helping to keep track of the inventory, transports and seamless integration with Metrc.",
-      'The main Features I was working on were: Integration with Metrc, Users system, Licenses system, Billing system '
-    ],
-    technologies: [
-      'JavaScript',
-      'CSS',
-      'MySQL',
-      'SQL',
-      'Node.js',
-      'Redux',
-      'Typescript',
-      'Git',
-      'SASS',
-      'HTML',
-      'Next.js',
-      'React',
-      'NestJs',
-      'REST API'
-    ]
-  },
-  gemini: {
-    projectName: 'Gemini',
-    projectDescription: [
-      "The project is the re-writing of an old application from the company, the application it's like a blog for the HR industry where different people from different companies are posting articles or services that their companies are providing and many other things, the application it's a big hit in Germany, having a 90& margin of the market.",
-      'The main technologies are Remix, Typescript, Lambda, Graphql, MySQL, AWS, NextJs and Pulumi.'
-    ],
-    technologies: [
-      'JavaScript',
-      'CSS',
-      'MySQL',
-      'SQL',
-      'Node.js',
-      'Typescript',
-      'Git',
-      'SASS',
-      'HTML',
-      'Next.js',
-      'React',
-      'Remix',
-      'AWS'
-    ]
-  }
-};
 
 export const Experience = () => {
   return (

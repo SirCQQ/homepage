@@ -1,10 +1,10 @@
 import React from 'react';
 import Page from 'components/core/page';
 import Section from '../core/section';
-import { Box, Grid, Heading, Text } from '@chakra-ui/react';
+import { Box, Grid, Heading } from '@chakra-ui/react';
 import Skill from '../core/skill';
 
-const Skills: React.FunctionComponent<any> = ({ children, ...props }) => {
+const Skills: React.FunctionComponent<any> = ({ ...props }) => {
   return (
     <Page
       {...props}

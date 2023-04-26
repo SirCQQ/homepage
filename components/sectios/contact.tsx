@@ -9,7 +9,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 
-const Contact: React.FunctionComponent<any> = ({ children, ...props }) => {
+const Contact: React.FunctionComponent<any> = ({ ...props }) => {
   return (
     <Page {...props} display="flex" flexDirection="column" minH="100vh">
       Contact

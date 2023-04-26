@@ -2,9 +2,7 @@ import type { NextPage } from 'next';
 import About from 'components/sectios/about';
 import Contact from 'components/sectios/contact';
 import Home from 'components/sectios/home';
-import Skills from 'components/sectios/skills';
 import DisplayWork from 'components/sectios/work';
-import Posts from 'components/posts';
 import Head from 'next/head';
 
 const index: NextPage = () => {

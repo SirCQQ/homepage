@@ -1,4 +1,4 @@
-import { Box, BoxProps, forwardRef, useColorModeValue } from '@chakra-ui/react';
+import { Box, BoxProps, forwardRef } from '@chakra-ui/react';
 import React from 'react';
 
 const Spacer = forwardRef<BoxProps, 'div'>(({ children, ...props }, ref) => {

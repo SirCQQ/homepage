@@ -5,7 +5,7 @@ import Page from '../core/page';
 import ProfileImage from '../profile-image';
 import Section from '../core/section';
 
-const About: React.FunctionComponent<any> = ({ children, ...props }) => {
+const About: React.FunctionComponent<any> = ({ ...props }) => {
   return (
     <Page
       {...props}
