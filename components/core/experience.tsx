@@ -1,5 +1,5 @@
-import React, { useId } from 'react';
-import { Box, Flex, Grid, Text, useColorModeValue } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import { months } from 'common';
 import { Spacer as Br } from '@chakra-ui/react';
 

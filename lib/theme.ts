@@ -1,8 +1,6 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import {
   extendTheme,
-  useColorModeValue,
-  ThemeExtension,
-  ThemeOverride,
   ComponentStyleConfig,
   theme as baseTheme
 } from '@chakra-ui/react';

@@ -5,7 +5,7 @@ const Posts: React.FunctionComponent<React.PropsWithChildren<any>> = ({
   children,
   ...props
 }) => {
-  return <Page {...props}>Latest Posts:</Page>;
+  return <Page {...props}>Comming Soon </Page>;
 };
 
 export default Posts;
