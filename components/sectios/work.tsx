@@ -34,7 +34,7 @@ const DisplayWork = forwardRef<BoxProps, 'div'>(
                     <WorkTitle>
                       <WorkLink href="https://catenaelectric.ro/">
                         Catena&apos;s
-                      </WorkLink>
+                      </WorkLink>{' '}
                       Contracts app
                     </WorkTitle>
                   </WorkLeft>
@@ -53,7 +53,7 @@ const DisplayWork = forwardRef<BoxProps, 'div'>(
                     <WorkTitle>
                       <WorkLink href="http://seed2shelf.us/">
                         Seed2Shelf&apos;s
-                      </WorkLink>
+                      </WorkLink>{' '}
                       application
                     </WorkTitle>
                   </WorkLeft>
@@ -72,7 +72,7 @@ const DisplayWork = forwardRef<BoxProps, 'div'>(
                     <WorkTitle>
                       <WorkLink href="https://powercode.com">
                         Powercode&apos;s
-                      </WorkLink>
+                      </WorkLink>{' '}
                       platform
                     </WorkTitle>
                   </WorkLeft>

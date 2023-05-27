@@ -37,33 +37,33 @@ export const Experience = () => {
         </ExperienceHeader>
         <ExperienceBody>
           <ExperienceProject>
-            <ProjectName>&apos;Parameter Manager&apos;</ProjectName>
+            <ProjectName>Parameter Manager</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
               </Text>
 
               <Text>
-                Developers needed a easier way to edit a large excel file that
-                would contain tens of thousands of variables for each different
-                projects, with this problem in mind that &apos;Parameter
-                Manager&apos; was started.
+                The solution proposed was that we need an app where you could
+                upload an Excel file with a predefined structure, the app would
+                parse the Excel and would allow the developers to group specific
+                parameters into sub-modules and many other things.
               </Text>
               <Br margin={'10px 0px'} />
               <Text>
                 The solution proposed was that we need an app where you could
-                upload an excel file with a predifined structure, the app would
-                parse the excel and would allow the developers to group specific
+                upload an Excel file with a predefined structure, the app would
+                parse the Excel and would allow the developers to group specific
                 parameters into sub-modules and many other things.
               </Text>
               <Br margin={'10px 0px'} />
               <Text>
                 The application was developed using React, Electron, Flask for
-                backend with MySql for the database.
+                the backend with MySql for the database.
               </Text>
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
               <UnorderedList>
                 <ListItem>
@@ -103,7 +103,7 @@ export const Experience = () => {
         </ExperienceHeader>
         <ExperienceBody>
           <ExperienceProject>
-            <ProjectName>&apos;Pariuri1X2&apos;</ProjectName>
+            <ProjectName>Pariuri1X2</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
@@ -116,13 +116,14 @@ export const Experience = () => {
               </Text>
               <Br margin={'10px 0px'} />
               <Text>
-                This site was created as with the purpose sharing knowledge and
-                oppinios about diffent teams and sports with other people.
+                This site was created to share knowledge and opinions about
+                different teams and sports with other people.
               </Text>
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
+
               <UnorderedList>
                 <ListItem>
                   Maintaining the old code base and fixing bug
@@ -132,7 +133,7 @@ export const Experience = () => {
                   Adding new functionality to the old features
                 </ListItem>
                 <ListItem>
-                  Creating a new calendar in the main page, connecting different
+                  Creating a new calendar on the main page, connecting different
                   games with different articles that tagged the specific game or
                   team
                 </ListItem>
@@ -153,7 +154,7 @@ export const Experience = () => {
             />
           </ExperienceProject>
           <ExperienceProject>
-            <ProjectName>&apos;Optimrent&apos;</ProjectName>
+            <ProjectName>Optimrent</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
@@ -161,29 +162,30 @@ export const Experience = () => {
 
               <Text>
                 Optimrent is a local app that helps renters and owners
-                communicate and pay the bills. Its main focus is to help owners
-                or administrators easily manage their properties with all the
-                bills, repairs and anything that needs to be done to a property.
+                communicate and pay the bills. Its primary focus is to help
+                owners or administrators easily manage their properties with all
+                the bills, repairs and anything that needs to be done to a
+                property.
               </Text>
               <Br margin={'10px 0px'} />
               <Text>
-                The application aims to help the owners, administrators but
-                tenants as well by providing all the informations in a single
-                app with access to the history off all the repairs, bills, etc.
+                The application aims to help the owners, administrators and
+                tenants by providing all the information in a single app with
+                access to the history of all the repairs, bills, etc.
               </Text>
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
               <UnorderedList>
                 <ListItem>
                   Maintaining or rewriting the old code base and fixing bug
                 </ListItem>
                 <ListItem>Write clean and maintainable code</ListItem>
-                <ListItem>Implementing pixel perfect designs</ListItem>
+                <ListItem>Implementing pixel-perfect designs</ListItem>
                 <ListItem>
                   Connecting the frontend with the backend module for
-                  subscription and the rest of the business logic for
+                  subscriptions and the rest of the business logic for
                   subscriptions.
                 </ListItem>
               </UnorderedList>
@@ -213,7 +215,7 @@ export const Experience = () => {
         </ExperienceHeader>
         <ExperienceBody>
           <ExperienceProject>
-            <ProjectName>&apos;Powercode&apos;</ProjectName>
+            <ProjectName>Powercode</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
@@ -225,14 +227,14 @@ export const Experience = () => {
               </Text>
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
               <UnorderedList>
                 <ListItem>
                   Maintaining the old code base and fixing bug
                 </ListItem>
                 <ListItem>Write clean and maintainable code</ListItem>
-                <ListItem>Implementing pixel perfect designs</ListItem>
+                <ListItem>Implementing pixel-perfect designs</ListItem>
                 <ListItem>Code Review</ListItem>
                 <ListItem>
                   Worked on generating invoices and sending the PDF via the user
@@ -275,7 +277,7 @@ export const Experience = () => {
         </ExperienceHeader>
         <ExperienceBody>
           <ExperienceProject>
-            <ProjectName>&apos;Seed2Shelf Application&apos;</ProjectName>
+            <ProjectName>Seed2Shelf Application</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
@@ -289,7 +291,7 @@ export const Experience = () => {
               </Text>
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
               <UnorderedList>
                 <ListItem>
@@ -342,7 +344,7 @@ export const Experience = () => {
         </ExperienceHeader>
         <ExperienceBody>
           <ExperienceProject>
-            <ProjectName>&apos;Gemini&apos;</ProjectName>
+            <ProjectName>Gemini</ProjectName>
             <ProjectDescription>
               <Text fontSize={'large'} fontStyle={'oblique'}>
                 Project description
@@ -354,12 +356,12 @@ export const Experience = () => {
                 industry where different people from different companies are
                 posting articles or services that their companies are providing
                 and many other things, the application it&apos;s a big hit in
-                Germany, having a 90& margin of the market.
+                Germany, having a 90% margin of the market.
               </Text>
 
               <Br margin={'20px 0px'} />
               <Text fontSize={'large'} fontStyle={'oblique'}>
-                Responsabilities
+                Responsibilities
               </Text>
               <UnorderedList>
                 <ListItem>Write clean and maintainable code</ListItem>

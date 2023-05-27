@@ -106,7 +106,10 @@ export const WorkLink = ({ href, children }) => {
     <Link
       href={href}
       target="_blank"
-      style={{ textDecoration: 'underline', textUnderlineOffset: '10px' }}
+      style={{
+        textDecoration: 'underline',
+        textUnderlineOffset: '10px'
+      }}
     >
       {/* <a
         target="_blank"
